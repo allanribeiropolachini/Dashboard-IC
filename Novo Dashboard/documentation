@@ -1,0 +1,19 @@
+-Comecei incluindo o header nas paginas através de uma função em javascript (criei header.js e header.html), através do site: https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages
+
+-Arrumei os javascripts, pois eles estavam jogados no meio dos html
+
+-Arrumei o tamanho das fontes e transformei tudo para ingles atraves do site https://www.w3schools.com/css/css_font.asp
+
+-Adicionei Carousel no index.html através do site http://globocom.github.io/bootstrap/javascript.html#carousel
+
+-Tive problemas com a responsividade no login
+
+-Estou usando TAGS HTML5 atraves do site https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list porem ainda preciso de algumas dicas
+
+-Instalei Eclipse atraves desse tutorial http://ubuntuhandbook.org/index.php/2016/01/how-to-install-the-latest-eclipse-in-ubuntu-16-04-15-10/
+
+-Arrumei os divs de alerta com escrever/confirmar email e senha usando o css globo.com que possui uma classe "alert"
+
+-Crei uma pagina de usuário conectado (user.html) e adicionei um Sidebar utilizando o w3-css, através do site https://www.w3schools.com/w3css/w3css_sidebar.asp e tive alguns problemas com o "margin-top" do side bar, por causa do header
+
+-Adicionei uma tabela na pagina do usuario, seguindo o padrao do globo.com http://globocom.github.io/bootstrap/base-css.html#tables

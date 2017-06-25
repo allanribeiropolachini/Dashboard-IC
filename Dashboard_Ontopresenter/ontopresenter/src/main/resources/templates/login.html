@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	
+<head>
+<title>Dashboard - OntoPresenter</title>
+<meta name="description" content="solo"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	<script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/header.js"></script>
+
+
+</head>
+<body>
+	<!--Nav Bar-->
+  <header layout:include="header"></header>
+
+    <section class="row-fluid">
+    	<div class="navbar-inner">
+
+	    	<div class="span4 offset1">
+				<h2 class="offset2">Login</h2>
+				<form  name="login"  method="post" action="user.html">
+					<fieldset>
+						<div class="row-fluid">
+				    		<font size="4"><b>User:</b><a style="color:red">*</a> </font>
+				    	</div>
+				    	<br/>
+						<input class="span" type="text"   maxlength="20" height="2" data-provide="typeahead" required="required"/>
+						<br/>
+						<div class="row-fluid">
+				    		<font size="4"><b>Password:</b><a style="color:red">*</a></font>
+				    	</div>
+				    	<br/>
+						<input class="span" type="text"   maxlength="20" height="2" required="required"/>
+						<br/>
+				        <a href="index.html" class="offset1">Forgot your password</a>                      
+						<br/>
+						<a href="cadastro_usuario.html" class="offset2">Not user yet</a>
+						<br/>
+				        <button class="btn btn-inverse btn-large btn-primary offset2" name="bt_login" type="submit" width="2px" data-loading-text="Loading...">Enter</button>
+
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
+
+</body>
+<script src="/js/bootstrap-button.js"></script>	
+    <script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</html>

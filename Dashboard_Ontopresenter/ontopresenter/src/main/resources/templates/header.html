@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+</head>
+<body>
+	<!--Barra de Navegacao-->
+    <div class="navbar navbar-inverse navbar-fix-top">
+    	<div class="navbar-inner">
+      		<div class="container">
+		 		<ul class="nav"> <a class="brand" href="/index">Dashboard</a> </ul>
+		        <div class="nav-collapse collapse pull-right">         		
+		 			<a class="btn btn-primary dropdown-toggle btn-inverse" data-toggle="dropdown" href="#">
+		                <span class=" icon-plus icon-white"></span></a>
+		            <ul class="dropdown-menu">
+		                <li><a href="/login" target="_parent"><i class="icon-fixed-width icon-user"></i> Login</a></li>
+		                <li><a href="/sign_up" target="_parent"><i class="icon-fixed-width icon-pencil"></i> Sign Up</a></li>
+		                <li class="divider"></li>
+		                <li><a href="/index" class="navbar-link" target="_parent"><i class="icon-fixed-width icon-ban-circle"></i>Exit</a></li>
+		        	</ul>
+		  		</div>
+      		</div>
+    	</div>
+    </div>
+</body>
+</html>

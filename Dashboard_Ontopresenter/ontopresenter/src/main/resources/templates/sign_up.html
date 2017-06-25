@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+<title>Dashboard - OntoPresenter</title>
+<meta name="description" content="solo"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	<script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/header.js"></script>
+	<script src="/js/check_email_password.js"></script>
+
+</head>
+<body>
+	<!--Nav Bar-->
+  <header layout:include="header"></header>
+
+	<section class="row-fluid ">
+			<div class="span4 offset4">
+				<font size="15"><center><b>Sign Up</b></center></font>
+				<br/>
+				<form  name="login"  method="POST" action="/create_user">
+					<fieldset>
+				    	<font size="4"><b>Name:</b><a style="color:red">*</a> </font>
+				    	<br/>
+						<input type="text"   maxlength="20" height="2" required="required" name="name"/> 
+						<br/>
+				    	<font size="4"><b>Email:</b><a style="color:red">*</a></font>
+						<div id="message_email1"></div>		
+						<br/>				
+						<input type="text" id="email" name="email"  maxlength="20" height="2" required="required" onblur="validacaoEmail(login.email)"/>
+						<br/>
+						<font size="4"><b>Confirm Email:</b><a style="color:red">*</a></font>
+						<div id="message_email2"></div>
+						<br/>
+						<input type="text" id="confirm_email"  maxlength="20" height="2" required="required" onblur="check_email();"/>
+						<br/>
+						<font size="4"><b>Password:</b><a style="color:red">*</a></font>
+						<br/>
+						<input type="password" id="password" name="password" maxlength="20" height="2" required="required"/>
+						<br/>
+						<font size="4"><b>Confirm Password:</b><a style="color:red">*</a></font>
+						<div id="message_password"></div>
+						<br/>
+						<input type="password" id="confirm_password"  maxlength="20" height="2" required="required" onblur="check_password();"/>
+						<br/>
+						<center>
+				        <button class="btn btn-inverse btn-large btn-primary" name="bt_login" type="submit" width="2px" data-loading-text="Loading...">Create account</button>
+				        </center>
+
+					</fieldset>
+				</form>
+		</div>
+	</section>
+
+</body>
+    <script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</html>

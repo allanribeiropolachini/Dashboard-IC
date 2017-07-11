@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	
+<head>
+<title>Dashboard - OntoPresenter</title>
+<meta name="description" content="solo"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/header.js"></script>
+
+</head>
+<body>
+
+	<!--Nav Bar-->
+  <header layout:include="header"></header>
+
+  <div class="navbar" style="margin-top:-1.5%">
+    <div class="navbar-inner">
+        <div class="container">
+          <div class="nav-collapse collapse">
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                VM</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" target="_parent"> Add VM</a></li>
+                    <li><a href="#" target="_parent"> Manage VM</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                Account Information</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" target="_parent"> Test1</a></li>
+                    <li><a href="#" target="_parent"> Test2</a></li>
+                    <li><a href="#" target="_parent"> Test3</a></li>
+                    <li><a href="#" target="_parent"> Test4</a></li>
+                    <li><a href="#" target="_parent"> Test5</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                Billing</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" target="_parent"> Test6</a></li>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+	<aside class="" style="margin-left:5%; margin-right:5%">
+    
+    <section id="infos">
+		<div class="row-fluid">
+			<div class="container-fluid" style="background-color: lightgray">
+
+				<h1 style="font-size: 50px" th:text="${name}"></h1>
+				<p style="font-size: 20px">This is the prototype of the Dashboard for ontology-based management of an Infrastructure as a Service in the Cloud.</p>
+				<p><a style="font-size: 20px" class="btn btn-primary btn-lg" href="#" data-loading-text="Loading..." role="button">Coming soon...</a></p>
+			</div>
+		</div>
+	</section>
+
+	<br/>
+
+	<h1>VM's</h1>
+
+	<section id="tale-VM">
+		<table class="table table-bordered table-condensed">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Memory</th>
+              <th>Time</th>
+              <th>Politic</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>100Gb</td>
+              <td>300min</td>
+              <td>ROI</td>
+              <td>Resolving problem 1</td>
+              <td style="color: green">Running</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>100Gb</td>
+              <td>300min</td>
+              <td>ROI</td>
+              <td>Resolving problem 1</td>
+              <td style="color: green">Running</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>100Gb</td>
+              <td>300min</td>
+              <td>ROI</td>
+              <td>Resolving problem 1</td>
+              <td style="color: green">Running</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>100Gb</td>
+              <td>300min</td>
+              <td>ROI</td>
+              <td>Resolving problem 1</td>
+              <td style="color: green">Running</td>
+            </tr>
+          </tbody>
+        </table>	
+	</section>
+	</aside>
+</body>
+    <script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</html>

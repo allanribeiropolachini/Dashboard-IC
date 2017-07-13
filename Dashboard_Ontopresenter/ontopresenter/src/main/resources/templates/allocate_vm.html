@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	
+<head>
+<title>Dashboard - OntoPresenter</title>
+<meta name="description" content="solo"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	<script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/header.js"></script>
+
+
+</head>
+<body>
+	<!--Nav Bar-->
+  <header layout:include="header"></header>
+
+    <section class="row-fluid">
+   
+
+	    	<div class="span4 offset4">
+				<center><h2>Allocate VM</h2></center>
+				<form  name="allocate_vm"  method="POST" action="/user">
+					<fieldset>
+						<div class="row-fluid">
+				    		<label size="4"><b>Number of VM you want create:</b><a style="color:red">*</a> </label>
+				    		<input name="number_vm" class="span" type="text"   maxlength="20" height="2" data-provide="typeahead" required="required"/>
+				    	</div>
+				    	
+						
+						<div class="row-fluid">
+				    		<label size="4"><b>Name:</b><a style="color:red">*</a> </label>
+				    	</div>
+				    	
+						<input name="name" class="span" type="text"   maxlength="20" height="2" data-provide="typeahead" required="required"/>
+						
+						<div class="row-fluid">
+				    		<label size="4"><b>Memory:</b><a style="color:red">*</a> </label>
+				    	</div>
+				    	
+						<input name="memory" class="span" type="text"   maxlength="20" height="2" data-provide="typeahead" required="required"/>
+						
+						<div class="row-fluid">
+				    		<label size="4"><b>Description:</b><a style="color:red">*</a></label>
+				    	</div>
+				    	
+						<input name="description" class="span" type="text"   maxlength="20" height="2" required="required"/>
+						
+				        <button class="btn btn-inverse btn-large btn-block btn-primary" name="bt_allocate_vm" type="submit" width="2px" data-loading-text="Loading...">Allocate</button>
+
+					</fieldset>
+				</form>
+			</div>
+
+	</section>
+
+</body>
+<script src="/js/bootstrap-button.js"></script>	
+    <script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</html>

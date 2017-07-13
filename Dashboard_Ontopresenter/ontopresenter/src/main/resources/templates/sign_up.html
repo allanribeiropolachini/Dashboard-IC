@@ -26,42 +26,50 @@
 	<!--Nav Bar-->
   <header layout:include="header"></header>
 
-	<section class="row-fluid ">
-			<div class="span4 offset4">
-				<font size="15"><center><b>Sign Up</b></center></font>
-				<br/>
-				<form  name="login"  method="POST" action="/create_user">
+	<section class="row-fluid">
+   
+
+	    	<div class="span4 offset4">
+				<p>
+				<center><h2>Sign Up</h2></center>
+				</p>
+				<form  name="signup"  method="POST" action="/create_user">
 					<fieldset>
-				    	<font size="4"><b>Name:</b><a style="color:red">*</a> </font>
-				    	<br/>
-						<input type="text"   maxlength="20" height="2" required="required" name="name"/> 
-						<br/>
-				    	<font size="4"><b>Email:</b><a style="color:red">*</a></font>
-						<div id="message_email1"></div>		
-						<br/>				
-						<input type="text" id="email" name="email"  maxlength="20" height="2" required="required" onblur="validacaoEmail(login.email)"/>
-						<br/>
-						<font size="4"><b>Confirm Email:</b><a style="color:red">*</a></font>
+						<p>
+				    	<label class="row-fluid"  size="4"><b>Name:</b><a style="color:red">*</a> </label>				    	
+						<input type="text" required="required" class="span" name="name"/> 
+						</p>
+						
+						<p>
+				    	<label class="row-fluid " size="4"><b>Email:</b><a style="color:red">*</a></label>
+						<div id="message_email1"></div>									
+						<input type="text" class="span" id="email" name="email" required="required" onblur="validacaoEmail(login.email)"/>
+						</p>
+						
+						<p>
+						<label class="row-fluid " size="4"><b>Confirm Email:</b><a style="color:red">*</a></label>
 						<div id="message_email2"></div>
-						<br/>
-						<input type="text" id="confirm_email"  maxlength="20" height="2" required="required" onblur="check_email();"/>
-						<br/>
-						<font size="4"><b>Password:</b><a style="color:red">*</a></font>
-						<br/>
-						<input type="password" id="password" name="password" maxlength="20" height="2" required="required"/>
-						<br/>
-						<font size="4"><b>Confirm Password:</b><a style="color:red">*</a></font>
+						<input type="text" class="span" id="confirm_email" required="required" onblur="check_email();"/>
+						</p>
+						
+						<p>
+						<label class="row-fluid " size="4"><b>Password:</b><a style="color:red">*</a></label>						
+						<input type="password" class="span" id="password" name="password" required="required"/>
+						</p>
+						
+						<p>
+						<label class="row-fluid"  size="4"><b>Confirm Password:</b><a style="color:red">*</a></label>
 						<div id="message_password"></div>
-						<br/>
-						<input type="password" id="confirm_password"  maxlength="20" height="2" required="required" onblur="check_password();"/>
-						<br/>
-						<center>
-				        <button class="btn btn-inverse btn-large btn-primary" name="bt_login" type="submit" width="2px" data-loading-text="Loading...">Create account</button>
-				        </center>
+						<input type="password" class="span" id="confirm_password"  required="required" onblur="check_password();"/>
+						</p>						
+						
+				        <button class="btn btn-inverse btn-large btn-block btn-primary" name="bt_login" type="submit" width="2px" data-loading-text="Loading...">Create account</button>
+				        
 
 					</fieldset>
 				</form>
 		</div>
+		
 	</section>
 
 </body>

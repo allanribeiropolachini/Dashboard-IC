@@ -8,11 +8,49 @@
 	<!--Barra de Navegacao-->
     <div class="navbar navbar-inverse navbar-fix-top">
     	<div class="navbar-inner">
-      		<div class="container">
-		 		<ul class="nav"> <a class="brand" href="/index">Dashboard</a> </ul>
+      		<div class="container-fluid">
+		 		<ul class="nav"> <a class="brand" href="/index"><img src="/img/Cloud.png" height="25%" width="25%"></img>Dashboard</a> 
+		 		   <li class="dropdown ">
+                   		<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class=" icon-plus icon-white"></span> VM <b class="caret"></b></a>
+                   		<ul class="dropdown-menu">
+                       		<li><a href="/allocate_vm">Allocate VM</a></li>
+                       		<li><a href="/user">List VM</a></li>  
+                   		</ul>
+               		</li>
+               		<li class="dropdown ">
+                   		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Politics <b class="caret"></b></a>
+                   		<ul class="dropdown-menu">
+                       		<li><a href="/politics_manage">Manage Politics</a></li>
+                       		<li><a href="/politics_atribute">Atributes Politics</a></li>  
+                   		</ul>
+               		</li>
+               		<li class="dropdown ">
+                   		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Client <b class="caret"></b></a>
+                   		<ul class="dropdown-menu">
+                       		<li><a href="">Manage Account</a></li>
+                       		<li><a href="">Billing</a></li>  
+                       		<li><a href="">Users</a></li> 
+                   		</ul>
+               		</li>
+               		<li class="dropdown ">
+                   		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                   		<ul class="dropdown-menu">
+                       		<li><a href="">FAQ</a></li>
+                       		<li><a href="">Contact Us</a></li>
+                   		</ul>
+               		</li>
+               		<li class="dropdown ">
+                   		<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                   		<ul class="dropdown-menu">
+                       		<li><a href="">LASDPC</a></li>
+                       		<li><a href="">Project IC</a></li>
+                   		</ul>
+               		</li>
+		 		</ul>
 		        <div class="nav-collapse collapse pull-right">         		
 		 			<a class="btn btn-primary dropdown-toggle btn-inverse" data-toggle="dropdown" href="#">
-		                <span class=" icon-plus icon-white"></span></a>
+		                <span class=" icon-plus icon-white"></span></a>	   
+		                
 		            <ul class="dropdown-menu">
 		                <li><a href="/login" target="_parent"><i class="icon-fixed-width icon-user"></i> Login</a></li>
 		                <li><a href="/sign_up" target="_parent"><i class="icon-fixed-width icon-pencil"></i> Sign Up</a></li>
@@ -20,6 +58,7 @@
 		                <li><a href="/index" class="navbar-link" target="_parent"><i class="icon-fixed-width icon-ban-circle"></i>Exit</a></li>
 		        	</ul>
 		  		</div>
+		  		
       		</div>
     	</div>
     </div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	
+<head>
+<title>Dashboard - OntoPresenter</title>
+<meta name="description" content="solo"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/js/header.js"></script>
+
+</head>
+<body>
+
+	<!--Nav Bar-->
+  <header layout:include="header"></header>
+  
+
+	<div class="navbar-inner">
+		<ul class="nav nav-tabs" id="myTab">
+                 <li class="active"><a href="#roi" data-toggle="tab">ROI</a></li>
+                 <li class=""><a href="#definecost" data-toggle="tab">Define Cost</a></li>
+                 <li class=""><a href="#ondemand" data-toggle="tab">On Demand</a></li>
+        </ul>   
+       	<div class="tab-content" id="myTab">  
+        	<div class="tab-pane active" id="roi">               
+		          <a href="#"> <label class="negrito fonte14"> 
+		          Atribute 1<br/> </label></a>               
+		         
+		         	          
+		          <a href="#"> <label class="negrito fonte14"> 
+		          Atribute 2<br/> </label></a>               
+             
+
+        	</div>	
+			<div class="tab-pane" id="definecost">    
+				<ol><li>
+				   <a href="#">
+				   <label class="negrito fonte10"> Atribute 1 </label></a>
+				
+				</li><li>
+				   <a href="#">
+				   <label class="negrito fonte10"> Atribute 2 </label></a>
+				
+				</li><li>
+				   <a href="#">
+				   <label class="negrito fonte10"> Atribute 3 </label></a>
+				
+				</li></ol>
+			</div>
+			<div class="tab-pane" id="ondemand">    
+				<ol><li>
+				   <a href="#">
+				   <label class="negrito fonte10"> Atribute 1 </label></a>
+				
+				</li><li>
+				   <a href="#">
+				   <label class="negrito fonte10"> Atribute 1 </label></a>
+				
+				</li><li>
+				   <a href="#">
+				   <label class="negrito fonte10"> Atribute 1 </label></a>
+				
+				</li></ol>
+			</div>	
+		</div>	  
+	</div>
+
+    
+    
+</body>
+    <script src="/js/bootstrap-collapse.js"></script>	
+    <script src="/js/bootstrap-dropdown.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</html>
